@@ -215,16 +215,16 @@ $ ls -la ~/skills/tooling/
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-jmartone/dev-jmartone/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-jmartone/dev-jmartone/output/github-snake.svg" />
-  <img alt="Serpiente comiendo mis contribuciones" src="https://raw.githubusercontent.com/dev-jmartone/dev-jmartone/output/github-snake.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dev-jmartone/dev-jmartone/main/profile/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dev-jmartone/dev-jmartone/main/profile/github-snake.svg" />
+  <img alt="Serpiente comiendo mis contribuciones" src="https://raw.githubusercontent.com/dev-jmartone/dev-jmartone/main/profile/github-snake.svg" width="100%" />
 </picture>
 
 <br/><br/>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=dev-jmartone&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" />
+<img height="170" src="./profile/stats.svg" alt="GitHub stats" />
 &nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-jmartone&layout=compact&theme=tokyonight&hide_border=true" alt="Lenguajes principales" />
+<img height="170" src="./profile/top-langs.svg" alt="Lenguajes principales" />
 
 </div>
 
