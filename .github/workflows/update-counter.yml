@@ -1,0 +1,67 @@
+name: Actualizar Contador de Visitas
+
+on:
+  schedule:
+    # Se ejecuta todos los días a las 00:00 UTC (cada 24 horas)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Permite dispararlo manualmente desde la pestaña Actions
+
+permissions:
+  contents: write # Permiso para hacer commit y push a la rama
+
+jobs:
+  update-visits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Obtener visitas y actualizar SVG
+        run: |
+          python - << 'EOF'
+          import urllib.request
+          import re
+
+          # 1. Consultar el número actual en Komarev
+          url = "https://komarev.com/ghpvc/?username=dev-jmartone"
+          req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+          with urllib.request.urlopen(req) as resp:
+              content = resp.read().decode('utf-8')
+
+          # 2. Extraer el valor numérico del badge de Komarev
+          matches = re.findall(r'<text[^>]*>(\d+)</text>', content)
+          if matches:
+              count = matches[-1]
+              print(f"Visitas actuales encontradas: {count}")
+
+              # 3. Reemplazar el número en assets/status-bar.svg
+              svg_path = "assets/status-bar.svg"
+              with open(svg_path, "r", encoding="utf-8") as f:
+                  svg_data = f.read()
+
+              pattern = r'(visitas<tspan fill="#6e7681"> : </tspan><tspan fill="#c9d1d9" font-weight="400">)[^<]+(</tspan>)'
+              new_svg_data = re.sub(pattern, rf'\g<1>{count}\g<2>', svg_data)
+
+              with open(svg_path, "w", encoding="utf-8") as f:
+                  f.write(new_svg_data)
+              print("assets/status-bar.svg actualizado correctamente.")
+          else:
+              print("No se pudo extraer el conteo de visitas de la respuesta.")
+          EOF
+
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/status-bar.svg
+          if git diff --staged --quiet; then
+            echo "Sin cambios en el conteo de visitas."
+          else
+            git commit -m "chore(stats): actualizar contador de visitas en status-bar [skip ci]"
+            git push
+          fi

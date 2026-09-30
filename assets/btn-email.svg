@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="36" viewBox="0 0 122 36" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'SF Mono','Courier New',monospace">
+  <defs>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Button Container -->
+  <rect x="0" y="0" width="122" height="36" rx="18" fill="#0d1117" stroke="#f472b6" stroke-opacity=".55" stroke-width="1.2"/>
+  <rect x="0" y="0" width="122" height="36" rx="18" fill="#f472b6" fill-opacity=".08"/>
+  <!-- Email Icon -->
+  <g transform="translate(14, 9) scale(0.75)" filter="url(#glow)">
+    <path fill="#f472b6" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+  </g>
+  <!-- Text & Arrow -->
+  <text x="39" y="23" font-size="12.5" font-weight="700" fill="#c9d1d9">Email</text>
+  <text x="97" y="22" font-size="12" font-weight="700" fill="#f472b6" filter="url(#glow)">↗</text>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="772" height="28" viewBox="0 0 772 28" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'SF Mono','Courier New',monospace">
+  <defs>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Visitas Pill -->
+  <g>
+    <rect x="0" y="0" width="128" height="28" rx="14" fill="#0d1117" stroke="#00ff9c" stroke-opacity=".55" stroke-width="1.2"/>
+    <rect x="0" y="0" width="128" height="28" rx="14" fill="#00ff9c" fill-opacity=".08"/>
+    <!-- Eye Icon -->
+    <path d="M 10 14 Q 16 9.5 22 14 Q 16 18.5 10 14 Z" fill="none" stroke="#00ff9c" stroke-width="1.2"/>
+    <circle cx="16" cy="14" r="1.8" fill="#00ff9c"/>
+    <text x="28" y="18" font-size="11" font-weight="700" fill="#00ff9c">visitas<tspan fill="#6e7681"> : </tspan><tspan fill="#c9d1d9" font-weight="400">30+</tspan></text>
+  </g>
+
+  <!-- Status Pill -->
+  <g>
+    <rect x="138" y="0" width="84" height="28" rx="14" fill="#0d1117" stroke="#00ff9c" stroke-opacity=".55" stroke-width="1.2"/>
+    <rect x="138" y="0" width="84" height="28" rx="14" fill="#00ff9c" fill-opacity=".08"/>
+    <circle cx="153" cy="14" r="3.5" fill="#00ff9c" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="153" cy="14" r="3.5" fill="none" stroke="#00ff9c">
+      <animate attributeName="r" values="3.5;10" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".7;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="165" y="18" font-size="11" font-weight="700" fill="#00ff9c" filter="url(#glow)">ONLINE</text>
+  </g>
+
+  <!-- Infra Pill -->
+  <g>
+    <rect x="232" y="0" width="276" height="28" rx="14" fill="#0d1117" stroke="#a78bfa" stroke-opacity=".55" stroke-width="1.2"/>
+    <rect x="232" y="0" width="276" height="28" rx="14" fill="#a78bfa" fill-opacity=".08"/>
+    <circle cx="247" cy="14" r="3.5" fill="#a78bfa"/>
+    <text x="259" y="18" font-size="11" font-weight="700" fill="#a78bfa">infra<tspan fill="#6e7681"> : </tspan><tspan fill="#c9d1d9" font-weight="400">VMware · Intune · Purview</tspan></text>
+  </g>
+
+  <!-- Dev Pill -->
+  <g>
+    <rect x="518" y="0" width="254" height="28" rx="14" fill="#0d1117" stroke="#38bdf8" stroke-opacity=".55" stroke-width="1.2"/>
+    <rect x="518" y="0" width="254" height="28" rx="14" fill="#38bdf8" fill-opacity=".08"/>
+    <circle cx="533" cy="14" r="3.5" fill="#38bdf8"/>
+    <text x="545" y="18" font-size="11" font-weight="700" fill="#38bdf8">dev<tspan fill="#6e7681"> : </tspan><tspan fill="#c9d1d9" font-weight="400">Python · React · C# · PHP</tspan></text>
+  </g>
+</svg>

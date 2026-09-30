@@ -4,13 +4,7 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=dev-jmartone&style=flat-square&color=00ff9c&label=VISITAS&labelColor=0d1117" alt="visitas" />
-&nbsp;
-<img src="https://img.shields.io/badge/status-online-00ff9c?style=flat-square&labelColor=0d1117" alt="status" />
-&nbsp;
-<img src="https://img.shields.io/badge/infra-VMware_·_Intune_·_Purview-a78bfa?style=flat-square&labelColor=0d1117" alt="infra" />
-&nbsp;
-<img src="https://img.shields.io/badge/dev-Python_·_React_·_C%23_·_PHP-38bdf8?style=flat-square&labelColor=0d1117" alt="dev" />
+<img src="./assets/status-bar.svg" alt="visitas · status · infra · dev" height="28" />
 
 </div>
 
@@ -45,7 +39,7 @@ dev-jmartone@portfolio:~$ _
 <br/>
 
 <details open>
-<summary><b>📂 infra/</b> &nbsp;<kbd>Infraestructura, VDI & Endpoint Management</kbd></summary>
+<summary><b>📂 infra/</b> &nbsp;<code># Infraestructura, VDI & Endpoint Management</code></summary>
 
 <br/>
 
@@ -62,15 +56,15 @@ drwxr-xr-x  identity/    Active Directory · Microsoft Purview · Windows Server
 | `endpoint` | **Microsoft Intune** | Políticas MDM/MAM, enrolamiento de flotas (macOS / Windows), gestión de wipes y despliegue masivo de apps |
 | `identity` | **Active Directory & Purview** | Gobierno de acceso, gestión de identidades, directivas y migración de archivos `.pst` a carpetas Archive de Outlook |
 
-<img src="https://img.shields.io/badge/VMware_Horizon-607078?style=for-the-badge&logo=vmware&logoColor=white" alt="VMware Horizon" />
-<img src="https://img.shields.io/badge/Intune-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Intune" />
-<img src="https://img.shields.io/badge/Active_Directory-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Active Directory" />
-<img src="https://img.shields.io/badge/Windows_Server-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Server" />
+<img src="https://img.shields.io/badge/VMware_Horizon-0d1117?style=for-the-badge&logo=vmware&logoColor=a78bfa" alt="VMware Horizon" />
+<img src="https://img.shields.io/badge/Intune-0d1117?style=for-the-badge&logo=microsoft&logoColor=a78bfa" alt="Intune" />
+<img src="https://img.shields.io/badge/Active_Directory-0d1117?style=for-the-badge&logo=windows&logoColor=a78bfa" alt="Active Directory" />
+<img src="https://img.shields.io/badge/Windows_Server-0d1117?style=for-the-badge&logo=windows&logoColor=a78bfa" alt="Windows Server" />
 
 </details>
 
 <details>
-<summary><b>📂 backend/</b> &nbsp;<kbd>Servidor, APIs y Automatización de Procesos</kbd></summary>
+<summary><b>📂 backend/</b> &nbsp;<code># Servidor, APIs y Automatización de Procesos</code></summary>
 
 <br/>
 
@@ -89,17 +83,17 @@ $ ls -la ~/skills/backend/
 | **C#** | Lógica de aplicaciones de soporte, herramientas de diagnóstico y utilitarios .NET |
 | **Bases de Datos** | SQLite, PostgreSQL (integración con Grafana/Zabbix) y MySQL |
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-<img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="C#" />
-<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=38bdf8" alt="Python" />
+<img src="https://img.shields.io/badge/Flask-0d1117?style=for-the-badge&logo=flask&logoColor=38bdf8" alt="Flask" />
+<img src="https://img.shields.io/badge/PHP-0d1117?style=for-the-badge&logo=php&logoColor=38bdf8" alt="PHP" />
+<img src="https://img.shields.io/badge/C%23-0d1117?style=for-the-badge&logo=dotnet&logoColor=38bdf8" alt="C#" />
+<img src="https://img.shields.io/badge/SQLite-0d1117?style=for-the-badge&logo=sqlite&logoColor=38bdf8" alt="SQLite" />
+<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=38bdf8" alt="PostgreSQL" />
 
 </details>
 
 <details>
-<summary><b>📂 frontend/</b> &nbsp;<kbd>Interfaces Web & Componentes Reactivos</kbd></summary>
+<summary><b>📂 frontend/</b> &nbsp;<code># Interfaces Web & Componentes Reactivos</code></summary>
 
 <br/>
 
@@ -117,15 +111,15 @@ drwxr-xr-x  styling/     Tailwind CSS
 | **Tailwind CSS** | Interfaces responsive basadas en utilidades, layouts modernos y dark mode |
 | **JavaScript (ES6+)** | Lógica frontend, consumo asíncrono de APIs y manipulaciones del DOM |
 
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+<img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=00ff9c" alt="React" />
+<img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=00ff9c" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=00ff9c" alt="Tailwind" />
+<img src="https://img.shields.io/badge/Vite-0d1117?style=for-the-badge&logo=vite&logoColor=00ff9c" alt="Vite" />
 
 </details>
 
 <details>
-<summary><b>📂 desktop-mobile/</b> &nbsp;<kbd>Escritorio y Móvil</kbd></summary>
+<summary><b>📂 desktop-mobile/</b> &nbsp;<code># Escritorio y Móvil</code></summary>
 
 <br/>
 
@@ -140,13 +134,13 @@ $ ls -la ~/skills/desktop-mobile/
 | **Windows Desktop** | C# · WPF | Aplicaciones de diagnóstico, soporte técnico en depósito y administración |
 | **Móvil / Multiplataforma** | Flutter | Aplicaciones móviles híbridas para Android e iOS |
 
-<img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="WPF" />
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+<img src="https://img.shields.io/badge/WPF-0d1117?style=for-the-badge&logo=dotnet&logoColor=a78bfa" alt="WPF" />
+<img src="https://img.shields.io/badge/Flutter-0d1117?style=for-the-badge&logo=flutter&logoColor=a78bfa" alt="Flutter" />
 
 </details>
 
 <details>
-<summary><b>📂 tooling/</b> &nbsp;<kbd>DevOps, IA & Flujo de Trabajo</kbd></summary>
+<summary><b>📂 tooling/</b> &nbsp;<code># DevOps, IA & Flujo de Trabajo</code></summary>
 
 <br/>
 
@@ -163,11 +157,11 @@ $ ls -la ~/skills/tooling/
 | **Herramientas de IA & CLI** | Claude Code, Antigravity CLI, Microsoft Copilot Studio |
 | **Monitoreo & Automatización Enterprise** | Grafana, Zabbix, Power Automate, integración con WebCenter API |
 
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/Linux_WSL-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="WSL" />
-<img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" />
-<img src="https://img.shields.io/badge/Power_Automate-0066FF?style=for-the-badge&logo=microsoftpowerautomate&logoColor=white" alt="Power Automate" />
+<img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=fb923c" alt="Git" />
+<img src="https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=fb923c" alt="Docker" />
+<img src="https://img.shields.io/badge/Linux_WSL-0d1117?style=for-the-badge&logo=linux&logoColor=fb923c" alt="WSL" />
+<img src="https://img.shields.io/badge/Grafana-0d1117?style=for-the-badge&logo=grafana&logoColor=fb923c" alt="Grafana" />
+<img src="https://img.shields.io/badge/Power_Automate-0d1117?style=for-the-badge&logo=microsoftpowerautomate&logoColor=fb923c" alt="Power Automate" />
 
 </details>
 
@@ -180,29 +174,37 @@ $ ls -la ~/skills/tooling/
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/dev-jmartone"><img src="./assets/card-1.svg" width="440" alt="Proyecto 1" /></a><br/>
-      <a href="https://github.com/dev-jmartone">{ } Repositorio</a>
+      <a href="https://dev-jmartone.github.io/proyecto-1"><img src="./assets/card-1.svg" width="440" alt="Proyecto 1" /></a><br/><br/>
+      <a href="https://dev-jmartone.github.io/proyecto-1"><img src="./assets/btn-demo.svg" alt="Live Demo" height="28" /></a>
+      &nbsp;
+      <a href="https://github.com/dev-jmartone/proyecto-1"><img src="./assets/btn-repo.svg" alt="Repositorio" height="28" /></a>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/dev-jmartone"><img src="./assets/card-2.svg" width="440" alt="Proyecto 2" /></a><br/>
-      <a href="https://github.com/dev-jmartone">{ } Repositorio</a>
+      <a href="https://dev-jmartone.github.io/proyecto-2"><img src="./assets/card-2.svg" width="440" alt="Proyecto 2" /></a><br/><br/>
+      <a href="https://dev-jmartone.github.io/proyecto-2"><img src="./assets/btn-demo.svg" alt="Live Demo" height="28" /></a>
+      &nbsp;
+      <a href="https://github.com/dev-jmartone/proyecto-2"><img src="./assets/btn-repo.svg" alt="Repositorio" height="28" /></a>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/dev-jmartone"><img src="./assets/card-3.svg" width="440" alt="Proyecto 3" /></a><br/>
-      <a href="https://github.com/dev-jmartone">{ } Repositorio</a>
+      <a href="https://dev-jmartone.github.io/proyecto-3"><img src="./assets/card-3.svg" width="440" alt="Proyecto 3" /></a><br/><br/>
+      <a href="https://dev-jmartone.github.io/proyecto-3"><img src="./assets/btn-demo.svg" alt="Live Demo" height="28" /></a>
+      &nbsp;
+      <a href="https://github.com/dev-jmartone/proyecto-3"><img src="./assets/btn-repo.svg" alt="Repositorio" height="28" /></a>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/dev-jmartone"><img src="./assets/card-4.svg" width="440" alt="Proyecto 4" /></a><br/>
-      <a href="https://github.com/dev-jmartone">{ } Repositorio</a>
+      <a href="https://dev-jmartone.github.io/proyecto-4"><img src="./assets/card-4.svg" width="440" alt="Proyecto 4" /></a><br/><br/>
+      <a href="https://dev-jmartone.github.io/proyecto-4"><img src="./assets/btn-demo.svg" alt="Live Demo" height="28" /></a>
+      &nbsp;
+      <a href="https://github.com/dev-jmartone/proyecto-4"><img src="./assets/btn-repo.svg" alt="Repositorio" height="28" /></a>
     </td>
   </tr>
 </table>
 
 <div align="center">
 
-<sub>$ gh repo list dev-jmartone --limit 50 &nbsp;→&nbsp; <a href="https://github.com/dev-jmartone?tab=repositories">ver todos los repositorios</a></sub>
+<sub><code>$ gh repo list dev-jmartone --limit 50</code> &nbsp;→&nbsp; <a href="https://github.com/dev-jmartone?tab=repositories">ver todos los repositorios ↗</a></sub>
 
 </div>
 
@@ -222,9 +224,8 @@ $ ls -la ~/skills/tooling/
 
 <br/><br/>
 
-<img height="170" src="./profile/stats.svg" alt="GitHub stats" />
-&nbsp;
-<img height="170" src="./profile/top-langs.svg" alt="Lenguajes principales" />
+<img height="185" src="./profile/stats.svg" alt="GitHub stats" />
+<!-- <img height="185" src="./profile/top-langs.svg" alt="Lenguajes principales" /> -->
 
 </div>
 
@@ -236,9 +237,11 @@ $ ls -la ~/skills/tooling/
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/josemartone/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/dev-jmartone"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="mailto:martone.jda@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://www.linkedin.com/in/josemartone/"><img src="./assets/btn-linkedin.svg" alt="LinkedIn" height="36" /></a>
+&nbsp;&nbsp;
+<a href="https://github.com/martoneworkshop"><img src="./assets/btn-github.svg" alt="GitHub" height="36" /></a>
+&nbsp;&nbsp;
+<a href="mailto:martone.jda@gmail.com"><img src="./assets/btn-email.svg" alt="Email" height="36" /></a>
 
 <br/><br/>
 
