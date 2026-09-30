@@ -1,0 +1,61 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"      # una vez al día
+  workflow_dispatch:          # botón "Run workflow" en la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      # --- Serpiente de contribuciones -------------------------------------
+      - name: Generate snake
+        continue-on-error: true
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Move snake to profile/
+        continue-on-error: true
+        run: |
+          mkdir -p profile
+          cp dist/github-snake.svg dist/github-snake-dark.svg profile/
+
+      # --- Tarjetas de stats (estilo terminal oscuro) -----------------------
+      - name: Generate stats card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&bg_color=0d1117&title_color=00ff9c&text_color=c9d1d9&icon_color=38bdf8&ring_color=00ff9c&border_color=1f2937&border_radius=14
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&bg_color=0d1117&title_color=00ff9c&text_color=c9d1d9&border_color=1f2937&border_radius=14
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Commit ------------------------------------------------------------
+      - name: Commit cards
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: update profile cards" || exit 0
+          git push
