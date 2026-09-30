@@ -17,7 +17,7 @@
     <!-- Eye Icon -->
     <path d="M 10 14 Q 16 9.5 22 14 Q 16 18.5 10 14 Z" fill="none" stroke="#00ff9c" stroke-width="1.2"/>
     <circle cx="16" cy="14" r="1.8" fill="#00ff9c"/>
-    <text x="28" y="18" font-size="11" font-weight="700" fill="#00ff9c">visitas<tspan fill="#6e7681"> : </tspan><tspan fill="#c9d1d9" font-weight="400">30+</tspan></text>
+    <text x="28" y="18" font-size="11" font-weight="700" fill="#00ff9c">visitas<tspan fill="#6e7681"> : </tspan><tspan fill="#c9d1d9" font-weight="400">31</tspan></text>
   </g>
 
   <!-- Status Pill -->
