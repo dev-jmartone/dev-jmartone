@@ -174,10 +174,10 @@ $ ls -la ~/skills/tooling/
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <a href="https://dev-jmartone.github.io/proyecto-1"><img src="./assets/card-1.svg" width="440" alt="Proyecto 1" /></a><br/><br/>
-      <a href="https://dev-jmartone.github.io/proyecto-1"><img src="./assets/btn-demo.svg" alt="Live Demo" height="28" /></a>
+      <a href="https://github.com/dev-jmartone/OrgWo-OpenSource"><img src="./assets/card-1.svg" width="440" alt="Proyecto 1" /></a><br/><br/>
+      <a href="https://orgwo-demo.onrender.com"><img src="./assets/btn-demo.svg" alt="Live Demo" height="28" /></a>
       &nbsp;
-      <a href="https://github.com/dev-jmartone/proyecto-1"><img src="./assets/btn-repo.svg" alt="Repositorio" height="28" /></a>
+      <a href="https://github.com/dev-jmartone/OrgWo-OpenSource"><img src="./assets/btn-repo.svg" alt="Repositorio" height="28" /></a>
     </td>
     <td align="center" width="50%">
       <a href="https://dev-jmartone.github.io/proyecto-2"><img src="./assets/card-2.svg" width="440" alt="Proyecto 2" /></a><br/><br/>
