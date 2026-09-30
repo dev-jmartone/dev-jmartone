@@ -17,7 +17,7 @@
 <br/>
 
 ```console
-usuario@portfolio:~$ cat about.txt
+dev-jmartone@portfolio:~$ cat about.txt
 
 NOMBRE     : José D. Martone Aguais
 ROL        : Full Stack Developer / IT Technical Support L2
